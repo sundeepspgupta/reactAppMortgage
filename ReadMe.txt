@@ -14,7 +14,7 @@ Steps for starting the project:
 	- Please change in conenction string in appsettings.json file.
 	- "AllowedHosts": "*",
   		"ConnectionStrings": {
-    		"MortgageDB": "Data Source=LAPTOP-OP0KIBPM\\SQLEXPRESS;Initial Catalog=MortgageDB;Integrated Security=True"
+    		"MortgageDB": "Data Source="Users SQL Datasource";Initial Catalog=MortgageDB;Integrated Security=True"
   		},
 
 - Once all these dependencies installed through terminal windows,DB generated,  please start the Web API project.
