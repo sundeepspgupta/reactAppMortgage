@@ -28,7 +28,7 @@ function App() {
               <Route path="/ShowMortgage" component={ShowMortgage} />
             </Switch>
 
-            {/* <DCandidates /> */}
+          
           </Container>
         </Router>
       </ToastProvider>
