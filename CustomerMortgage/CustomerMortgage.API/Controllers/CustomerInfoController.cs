@@ -2,6 +2,7 @@
 using CustomerMortgage.Persistence;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -32,8 +33,17 @@ namespace CustomerMortgage.API.Controllers
         [HttpPost]
         public async Task<ActionResult<Customer>> PostCustomer(Customer customer)
         {
-            _dataContext.Customer.Add(customer);
-            await _dataContext.SaveChangesAsync();
+            try
+            {
+                _dataContext.Customer.Add(customer);
+                await _dataContext.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                //ex.Message(ex.ToString());
+
+            }
+
 
             return CreatedAtAction("GetCustomer", new { id = customer.ID }, customer);
         }

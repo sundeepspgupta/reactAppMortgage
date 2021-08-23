@@ -33,6 +33,7 @@ const styles = (theme) => ({
 
 const DashBoard = ({ classes, ...props }) => {
   
+  //conditional loading , if second parameter is emppty,it will only execute for first time.
   useEffect(() => {
     props.mortgageList();
   }, []); //componentDidMount

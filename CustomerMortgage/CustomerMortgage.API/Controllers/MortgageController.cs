@@ -11,6 +11,11 @@ namespace CustomerMortgage.API.Controllers
     public class MortgageController : Controller
     {
         private readonly DataContext _dataContext;
+
+        /// <summary>
+        /// Required Datacontext to do any operation in data which comes through dependency injection.
+        /// </summary>
+        /// <param name="dataContext"></param>
         public MortgageController(DataContext dataContext)
         {
             _dataContext = dataContext;

@@ -4,6 +4,7 @@ const useForm = (initialFieldValues, validate, setCurrentId) => {
     const [values, setValues] = useState(initialFieldValues)
     const [errors, setErrors] = useState({})
 
+    //capturing value on key strokes in textbox and maintaining the state.
     const handleInputChange = e => {
         const { name, value } = e.target
         const fieldValue = { [name]: value }

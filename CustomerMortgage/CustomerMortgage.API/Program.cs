@@ -16,7 +16,9 @@ namespace CustomerMortgage.API
             try
             {
                 ApplicaitonLogger.Information("MortgageService API started");
-                
+               
+
+
                 CreateHostBuilder(args).Build().Run();
             }
             catch (Exception ex)
