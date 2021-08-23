@@ -83,7 +83,7 @@ const CustomerForm = ({ classes, ...props }) => {
 
   
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // prevent to send request to browser without reloading the page.
     if (validate()) {
       const onSuccess = () => {
         resetForm();
