@@ -17,8 +17,9 @@
         "ASPNETCORE_ENVIRONMENT": "Development",
         "ENV_VAR_REDIS_CACHE_HOST_DETAIL": "127.0.0.1:6379",
         "ENV_VAR_REDIS_CACHE_EXPIRATION_DURATION": "90",
-        "ENV_VAR_MINIMUM_LOGGING_LEVEL": "Development",
-        "ENV_VAR_TARGET_ENVIRONMENT": "Information"
+        "ENV_VAR_MINIMUM_LOGGING_LEVEL": "Information",
+        "ENV_VAR_TARGET_ENVIRONMENT": "Development" // taregt development env
+       
       }
     },
     "CustomerMortgage.API": {
@@ -26,7 +27,7 @@
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development" //its a system variable. .NET core support three env.
       },
       "dotnetRunMessages": "true",
       "applicationUrl": "http://localhost:5000"

@@ -39,7 +39,7 @@ namespace CustomerMortgage.API
                     Title = "CustomerMortgage.API", 
                     Version = "v1",
                     Description = "Create customer related Mortgage",
-                    Contact = new OpenApiContact
+                    Contact = new OpenApiContact //Contact and license name.
                     {
                         Name = "Sundeep Gupta",
                         Email = ""
@@ -71,7 +71,7 @@ namespace CustomerMortgage.API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "CustomerMortgage.API v1"));
             }
             app.UseCors(options => 
-                options.WithOrigins("http://localhost:3002")
+                options.WithOrigins("http://localhost:3000")
                 .AllowAnyHeader()
                 .AllowAnyMethod()
             );

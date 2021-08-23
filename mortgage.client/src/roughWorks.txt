@@ -5,18 +5,23 @@ App Structure
 +---● actions
 |   |
 |   |-- api.js (handle all http request)
-|   |-- dCandidate.js (Redux actions & action creators) 
+|   |-- customer.js (Redux actions & action creators) 
+    |-- mortgage.js (Redux actions & action creators)
+    |-- showMortgage.js (Redux actions & action creators)
 |   |-- store.js (configure redux store)
 |
 +---● components
 |   |
-|   |--DCandidateForm.js (form operations) - child
-|   |--DCandidates.js  (list of records) - parent
+|   |--Customer.js (form operations) - child
+|   |--Mortgage.js  (form operate) - parent
+|   |--ShowMortgage.js (Dashboard) - Parent
 |   |--useForm.js (handles common form opearations)
 |
 |---● reducers
 |   |
-|   |--dCandidate.js
+|   |--customer.js
+    |--mortgage.js
+    |--showMortgage.js
 |   |--index.js
 |
 |-- App.js
